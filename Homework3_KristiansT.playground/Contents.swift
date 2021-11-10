@@ -60,8 +60,8 @@ for counter in 1...5 {
  */
 var bugClimbed: Double = 0
 let electricPost: Double = 10
-let climbDay: Double = 2
-let slideNight = -1
+//let climbDay: Double = 2
+//let slideNight = -1
 var numberOfDays: Double = 0
 
 while bugClimbed < electricPost {
@@ -69,10 +69,10 @@ while bugClimbed < electricPost {
     bugClimbed -= 0.5
     numberOfDays += 0.5
         if bugClimbed == electricPost{
-           //print("bug will spend \(numberOfDays) days to reach top of the post")
+            //print("bug will spend \(numberOfDays) days to reach top of the post")
             break
         }
-  print("bug will spend \(numberOfDays) days to reach top of the post")
+    print("bug will spend \(numberOfDays) days to reach top of the post")
 
 }
 
