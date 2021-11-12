@@ -9,7 +9,7 @@ import UIKit
  */
 
 var deposit: Double = 500000
-var rate: Double = 0.05 //5%
+var rate: Double = 0.05   // 5%
 var period = 5
 var finalAmount: Double = 0
 var profit: Double = 0
@@ -19,6 +19,7 @@ for _ in 1...period {
     finalAmount = round(finalAmount * 100) / 100
     let profit1 = finalAmount - deposit
     profit = round(profit1 * 100) / 100
+    
 }
 print("Amount of income after \(period) years will be \(profit) Eur. My total deposit will be \(finalAmount) Eur !")
 
@@ -42,7 +43,7 @@ for evenNumber in myArray{
 
 
 //var guessedNum = Int.random(in: 1...5)
-for counter in 1...5 {
+for counter in 1...6 {
     let randomNumber = Int.random(in: 1...5)
     if counter == randomNumber{
         print("Number 5 will be after \(counter) shuffles")
@@ -50,7 +51,6 @@ for counter in 1...5 {
     }else {
         print("not number 5")
     }
-    
 }
 
 
