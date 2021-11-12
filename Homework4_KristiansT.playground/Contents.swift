@@ -108,10 +108,23 @@ print(array)
 //}
 
 
+// array.removeAll(where: { isEvenNumber() })
+
+for i in array {
+    if isEvenNumber(number: i){
+        array.remove(at: array.firstIndex(of: i)!)
+    }
+}
+
+
 var filteredArray = [Int]()
 for i in stride(from: 0, to: array.count, by: 2) {
     filteredArray.append(array[i])
     
 }
 print(filteredArray)
+
+
+let arr = array.filter({$0 % 2 != 0})
+print(arr)
 // correct answer, but not done in the proper way as the task described
